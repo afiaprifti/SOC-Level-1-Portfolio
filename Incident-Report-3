@@ -6,3 +6,60 @@ An inbound email containing an external hyperlink triggered a phishing detection
 not previously categorized as trusted.
 
 
+Analyst information:
+Analyst Role: SOC Level 1 Analyst (Simulation)
+Investigation Environment: TryHackMe Lab Environment
+Alert Severity: Medium
+Time to Resolve: 7.9 minutes
+Investigation Date: 13 May 2026
+
+Email content analysis:
+The email welcomed a new employee and requested completion of onboarding setup through an external link:
+
+"https://hrconnex.thm/onboarding/15400654060/j.garcia"
+
+The message appeared to originate from an HR onboarding workflow.
+
+
+Investigation process:
+Alert review
+Confirmed alert triggered by external embedded hyperlink.
+Medium severity assigned automatically by email security controls.
+
+Sender verification
+Checked sender domain: hrconnex.thm
+Domain structure consistent with HR onboarding platform naming.
+No spoofing indicators detected.
+SPF/DKIM tools indicated valid results.
+
+
+Link analysis:
+Inspected URL structure.
+No URL shorteners used.
+Domain matched sender address.
+No suspicious redirects observed.
+Link context aligned with onboarding workflow.
+
+
+Context validation:
+Recipient appears to be new employee onboarding target.
+Message context logically matches HR onboarding process.
+Communication tone professional and expected.
+
+
+Alert classification: false positive
+Legitimate onboarding communication.
+Verified sender domain.
+No malicious indicators detected.
+Business context validated.
+
+
+Response action taken:
+Case closed as false positive.
+Email allowed.
+Alert reviewed and documented.
+
+
+
+
+
