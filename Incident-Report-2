@@ -6,3 +6,70 @@ A security alert was triggered following detection of an inbound email containin
 The investigation aimed to determine whether the activity represented a phishing attempt and required escalation.
 
 Analyst information:
+Analyst Role: SOC Level 1 Analyst (Simulation)
+Investigation Environment: TryHackMe Lab Environment
+Alert Severity: Medium
+Time to Resolve: 4.23 minutes
+Investigation Date: 13 May 2026
+
+
+Alert details:
+Alert Name: Inbound Email Containing Suspicious External Link
+Timestamp: 05/13/2026 20:47:26.833
+Affected User: c.allen@thetrydaily.thm
+
+
+Investigation process:
+Alert review
+Reviewed alert information and affected mailbox.
+Confirmed alert originated from email security monitoring system.
+
+Email Content analysis
+Examined sender and email structure.
+Identified suspicious username pattern containing numeric characters inconsistent with legitimate corporate email conventions.
+
+URL verification:
+Examined sender and email structure.
+Identified suspicious username pattern containing numeric characters inconsistent with legitimate corporate email conventions.
+
+Report writing:
+A report was written to provide details about the alert which can be used by upper level analysts to take the necessary actions.
+
+
+Findings:
+Email contained a confirmed malicious external link.
+Sender characteristics suggested phishing behaviour.
+URL validation tools identified malicious reputation.
+
+
+Indicators of compromise:
+Numeric characters in sender username, external phishing URL.
+
+
+MITRE ATT&CK Mapping:
+Initial Access — Phishing (T1566)
+
+Impact assessment:
+Credential harvesting, malware infection via URL link.
+
+Escalation decision:
+The alert was escalated because it included a malicious URL.
+
+
+Remmediation actions:
+Report and quarantine the malicious email.
+Notify the affected user.
+Monitor mailbox activity for suspicious behaviour.
+Initiate credential reset if interaction occurred.
+
+
+Skills demonstrated:
+Email threat analysis
+Alert triage and classification
+IOC identification
+Phishing detection techniques
+SOC escalation procedures
+Incident documentation
+
+
+
