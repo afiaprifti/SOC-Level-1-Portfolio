@@ -1,0 +1,74 @@
+Incident-01-Phishing Attack
+Inbound Email Containing Suspicious External Link
+
+Overview:
+An alert was generated indicating an inbound email containing a suspicious external URL. 
+The alert required investigation to determine whether malicious activity was present and whether escalation was necessary.
+
+Analyst information:
+Analyst Role: SOC Level 1 Analyst (Simulation)
+Investigation Environment: TryHackMe Lab Environment
+Alert Severity: Medium
+Time to Resolve: 6.67 minutes
+Investigation Date: 13 May 2026
+
+
+Alert details:
+Alert Name: Inbound Email Containing Suspicious External Link
+Timestamp: 05/13/2026 20:45:08.833
+Affected User: h.harris@thetrydaily.thm
+The alert indicated potential phishing activity due to the presence of an external URL embedded within the email body.
+
+Investigation process:
+Reviewd all infomation and metadata provided for the alert, Confirmed alert originated from email security monitoring system.
+
+URL analysis:
+Examined the URL contained in the email body, Security analysis tools within the virtual machine environment identified the URL as malicious.
+
+Threat Validation:
+Verified malicious classification using investigation tools.
+Determined the email represented a phishing attempt designed to redirect the recipient to a harmful external resource.
+
+Findings:
+Email contained a confirmed malicious external link.
+High likelihood of credential harvesting or malware delivery.
+No evidence provided of successful compromise at investigation time.
+
+Alert classification: true positive
+
+
+Indicators of comrpomise:
+suspicious inbound email, external fishing URL
+
+MITRE ATT&CH mapping:
+Initial Access — Phishing (T1566)
+
+Potential risks included:
+1. malware delivery
+2. credential comrpomise
+3. unathorized account login
+
+
+Escalation decision:
+the attack was escalated because it contained malicious URL and user interaction could lead to account compromise.
+
+Recommended remediation actions:
+1. notify affected user
+2. remove or quarantine malicious email
+3. reset user credential if interaction occured
+4. monitor account activity for suspicious behaviour
+5. spread phishing awareness
+
+
+Lessons learned:
+This investigation demonstrates the importance of rapid phishing triage and 
+validation of external links to prevent credential compromise within enterprise environments.
+
+
+Skills demonstrated:
+Security alert triage
+Phishing investigation
+Threat validation
+SOC escalation procedures
+Incident documentation
+Analyst decision-making
