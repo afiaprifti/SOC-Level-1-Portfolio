@@ -42,6 +42,8 @@ Sender characteristics suggested phishing behaviour.
 URL validation tools identified malicious reputation.
 
 
+Alert classification: true positive
+
 Indicators of compromise:
 Numeric characters in sender username, external phishing URL.
 
