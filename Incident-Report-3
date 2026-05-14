@@ -1,1 +1,8 @@
+Incident-02-Phishing Attack
+Inbound Email Containing Suspicious External Link
+
+Overview:
+An inbound email containing an external hyperlink triggered a phishing detection alert due to the presence of a domain 
+not previously categorized as trusted.
+
 
